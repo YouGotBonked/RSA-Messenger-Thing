@@ -11,7 +11,6 @@ export default function App() {
     const [encryptInput, setEncryptInput] = useState('');
     const [decryptInput, setDecryptInput] = useState('');
 
-    // Generate RSA key pair
     const generateKeys = async () => {
         try {
             const keyPair = await window.crypto.subtle.generateKey(
